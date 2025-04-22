@@ -1,0 +1,244 @@
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('../fonts/font-web/BricolageGrotesqueCondensed-Bold.woff2') format('woff2'),
+      url('../fonts/font-web/BricolageGrotesqueCondensed-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('../fonts/font-web/BricolageGrotesqueCondensed-Regular.woff2') format('woff2'),
+      url('../fonts/font-web/BricolageGrotesqueCondensed-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('../fonts/font-web/BricolageGrotesqueCondensed-ExtraBold.woff2') format('woff2'),
+      url('../fonts/font-web/BricolageGrotesqueCondensed-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+
+
+$font-body: 'Bricolage Grotesque', sans-serif;
+$cl-pink: #FF01FF;
+$cl-black: #000000;
+$cl-white: #FFFFFF;
+$cl-dark: #040303;
+.cl-white{
+  color: $cl-white;
+}
+
+
+.col-lg{
+  min-width: 0;
+}
+.fs-333{
+  font-size: 20vw;
+  line-height: 85%;
+}
+.fs-210{
+  font-size: 12.5vw;
+  line-height: 90%;
+}
+.fs-150{
+  font-size: 10.1vw;
+  line-height: normal;
+}
+.fs-110{
+  font-size: 6.5vw;
+  line-height: 90%;
+}
+.fs-48{
+  font-size: 3vw;
+  line-height: normal;
+}
+.fs-40{
+  font-size: 2.5vw;
+  line-height: 120%;
+}
+.fs-36{
+  font-size: 2.2vw;
+  line-height: 100%;
+}
+.fs-32{
+  font-size: 1vw;
+  line-height: 90%;
+}
+.fw-800{
+  font-weight: 800;
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+ 
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+  
+}
+@media (min-width: 768px) and (max-width: 991px){
+  
+}
+@media (max-width: 767px) {
+  .fs-333{
+    font-size: 20vw;
+    line-height: 85%;
+  }
+  .fs-210{
+    font-size: 12.5vw;
+    line-height: 90%;
+  }
+  .fs-150{
+    font-size: 10.1vw;
+    line-height: normal;
+  }
+  .fs-110{
+    font-size: 6.5vw;
+    line-height: 90%;
+  }
+  .fs-48{
+    font-size: 3vw;
+    line-height: 100%;
+  }
+  .fs-40{
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .fs-36{
+    font-size: 16px;
+    line-height: 100%;
+  }
+  .fs-32{
+    font-size: 9px;
+    line-height: 100%;
+  }
+}
+@mixin transform($property){
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+@mixin transition($property){
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+@mixin borderRadius($property){
+  border-radius: $property;
+  -webkit-border-radius: $property;
+  -moz-border-radius: $property;
+  -ms-border-radius: $property;
+  -o-border-radius: $property;
+}
+
+@keyframes process {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+@-webkit-keyframes marquee {
+  0% {
+    right: 0;
+    @include transform(translate(100%,0));
+  }
+  100% {
+    right: 100%;
+    @include transform(translate(0%,0));
+  }
+}
+@-o-keyframes marquee {
+  0% {
+    right: 0;
+    @include transform(translate(100%,0));
+  }
+  100% {
+    right: 100%;
+    @include transform(translate(0%,0));
+  }
+}
+@-moz-keyframes marquee {
+  0% {
+    right: 0;
+    @include transform(translate(100%,0));
+  }
+  100% {
+    right: 100%;
+    @include transform(translate(0%,0));
+  }
+}
+@keyframes marquee {
+  0% {
+    right: 0;
+    @include transform(translate(100%,0));
+  }
+  100% {
+    right: 100%;
+    @include transform(translate(0%,0));
+  }
+}
+
+@keyframes parallax {
+  0% {
+      transform: translateY(0) rotate(0deg);
+  }
+  50% {
+      transform: translateY(-15px) rotate(2deg);
+  }
+  100% {
+      transform: translateY(0) rotate(0deg);
+  }
+}
+@keyframes drift {
+  0% {
+      transform: translate(0, 0);
+  }
+  25% {
+      transform: translate(5px, -5px);
+  }
+  50% {
+      transform: translate(-5px, 5px);
+  }
+  75% {
+      transform: translate(5px, 5px);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}

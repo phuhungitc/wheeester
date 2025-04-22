@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Bricolage Grotesque Condensed';
+    src: url('BricolageGrotesqueCondensed-Bold.woff2') format('woff2'),
+        url('BricolageGrotesqueCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque Condensed';
+    src: url('BricolageGrotesqueCondensed-Regular.woff2') format('woff2'),
+        url('BricolageGrotesqueCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque Condensed';
+    src: url('BricolageGrotesqueCondensed-ExtraBold.woff2') format('woff2'),
+        url('BricolageGrotesqueCondensed-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
